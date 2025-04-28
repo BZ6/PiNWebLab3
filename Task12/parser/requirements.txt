@@ -1,0 +1,9 @@
+fastapi
+pydantic
+uvicorn
+sqlmodel
+psycopg2-binary
+python-dotenv
+
+bs4
+requests

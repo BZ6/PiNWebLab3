@@ -1,0 +1,11 @@
+fastapi
+pydantic
+uvicorn
+sqlmodel
+psycopg2-binary
+python-dotenv
+alembic
+bcrypt
+PyJWT
+passlib
+requests
