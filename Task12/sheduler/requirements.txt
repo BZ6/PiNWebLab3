@@ -9,3 +9,6 @@ bcrypt
 PyJWT
 passlib
 requests
+celery
+redis
+asyncio
