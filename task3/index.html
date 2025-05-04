@@ -62,7 +62,9 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#parser-endpoint">Parser endpoint</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#_1">Вывод</a>
+    <li class="toctree-l2"><a class="reference internal" href="#_1">Результаты</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_2">Вывод</a>
     </li>
     </ul>
                 </li>
@@ -268,7 +270,12 @@ async def parse_site(url: str):
     except Exception as e:
         raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=str(e))
 </code></pre>
-<h2 id="_1">Вывод</h2>
+<h2 id="_1">Результаты</h2>
+<p>Запрос на shedule</p>
+<p><img alt="image" src="../img/shedule_out.png" /></p>
+<p>Что показывает в этот момент docker-compose</p>
+<p><img alt="image" src="../img/docker_out.png" /></p>
+<h2 id="_2">Вывод</h2>
 <p>Самым полезным я считаю это сети внутри docker compose, а если точнее возможность обращаться
 не по какому-то замысловатому хосту, и Celery, так как он дает возможность распределить нагрузку,
 что помогает улучшить производительность приложения.</p>
